@@ -11,4 +11,8 @@ func main() {
 
 	b := media.CreateRecord("reads", []string{"one", "two", "three"})
 	println(b.ArtistName)
+
+	for index := 0; index < len(b.Albums); index++ {
+		println("album arr:", b.Albums[index])
+	}
 }
